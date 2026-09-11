@@ -1,0 +1,140 @@
+body{
+    background-color: #091619;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Garamond', sans-serif;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #091619;
+    color: #ffffff;
+    font-size: 0.9em;
+}
+/* Opening Cover */
+#indexCover {
+  position: relative;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  color: white;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+}
+    #indexCover img {
+        width: 80%;
+        height: auto;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        
+    }
+
+#indexCoverText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+}
+    #indexCoverText h1 {
+        font-size: 4em;
+    }
+/* Opening Cover END */
+
+
+/* Default Album Container */
+.AlbumContainer {
+    position: relative;
+    background-color: #091619;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+    
+   
+    display: flex;
+    align-items: center; 
+    gap: 20px;          
+    text-align: left;  
+
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer; 
+}    
+.AlbumContainer:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+    .AlbumContainer img {
+        width: 6em;
+        height: 6em;
+        object-fit: cover;  
+        flex-shrink: 0;     
+}
+    .AlbumContainer::before {
+        content: "";
+        background: linear-gradient(to right, var(--gradient-colors,));
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        margin: -3px;
+}
+    #KIDS {
+        --gradient-colors: #eab308, #3b82f6, #ef4444;
+    }
+
+    #BestDayEver {
+        --gradient-colors: #ff1838, #9e2eae;
+    }
+
+    #BlueSlidePark {
+        --gradient-colors: #1e3a8a, #0284c7, #14b8a6;
+    }
+
+    #Macadelic {
+        --gradient-colors: #505050, #fafafa, #b34846 ;
+    }
+
+    #WMWTSO {
+        --gradient-colors: #c82127, #c2825c, #944522;
+    }
+
+    #Faces {
+        --gradient-colors: #ffc315, #dc2626, #3e8cee;
+    }
+
+    #GOODAM {
+        --gradient-colors: #f8fafc, #94a3b8, #9e9e9e;
+    }
+
+    #TheDivineFeminine {
+        --gradient-colors: #b29182, #d7beba, #d7d7d7;
+    }
+
+    #Swimming {
+        --gradient-colors: #dea6a9, #a3c8e2, #f8fafc;
+    }
+
+    #Circles {
+        --gradient-colors: #ffffff, #a0a0a0, #c1c1c1;
+    }
+
+    #Balloonerism {
+        --gradient-colors: #2f5da8,#daedf3, #e7a38b ;
+    }
+
