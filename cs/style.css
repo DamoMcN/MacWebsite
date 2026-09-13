@@ -180,37 +180,42 @@ ul {
 
 .btn {
     display: block;
-    width: 140px;            
-    margin: 10px auto;
+    width: 80%;               
+    max-width: 600px;
+    margin: 10px auto 0 auto;  
     font-size: 1.2em;
     padding: 10px 20px;
     background-color: #091619;
     color: #ffffff;
     border: 1px solid #ffffff;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: width 0.4s ease, border-radius 0.4s ease; 
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;   
+    transition: width 0.4s ease, border-radius 0.4s ease;
 }
 
 .btn.active {
-    width: 80%;               
-    border-radius: 8px 8px 0 0; 
-    border-bottom: none;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid transparent; 
 }
 
 .tracklist {
     display: none;
-    margin-top: 15px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 15px;
-    margin: 15px, 40px, 15px, 40px;
-    padding-bottom: 15px;
+    width: 80%;                
+    max-width: 600px;
+    margin: 0 auto 20px auto;  
+    padding: 20px 0;
     text-align: center;
     border-left: 1px solid #ffffff;
     border-right: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
+    border-top: none;          
     border-radius: 0 0 8px 8px;
+    box-sizing: border-box;   
 }
 .tracklist li {
     list-style-type: none;
@@ -263,23 +268,122 @@ ul {
 }
 
 #left {
-    width: 100%; /* Spans full width of left column */
-    height: 100%; /* Spans full height of row */
-    object-fit: cover; /* Prevents image distortion */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
     margin: 0;
     padding: 0;
     display: block;
-    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
-    mask-image: linear-gradient(to right, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
 }
 
 #right {
-    width: 100%; /* Spans full width of right column */
-    height: 100%; /* Spans full height of row */
-    object-fit: cover; /* Prevents image distortion */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
     margin: 0;
     padding: 0;
     display: block;
-    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
-    mask-image: linear-gradient(to left, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to top, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
 }
+
+
+.row {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+}
+
+        /* Desktop Styles (768px screens and above) */
+        @media (min-width: 768px) {
+            .InfoContainer {
+                max-width: 900px;
+                margin: 0 auto 30px auto; 
+            }
+
+            .row {
+                flex-direction: row;
+                align-items: stretch;
+            }
+
+            .col, .Txtcol {
+                flex: 1;
+            }
+
+           
+            .tracklist {
+                max-width: 500px;
+                margin: 20px auto;
+            }
+            .albumCover img {
+            width: 40%;          
+            max-width: 320px;   
+            height: auto;
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            border-radius: 20px;
+            padding: 10px;
+            }
+            .btn {
+            display: block;
+            width: 60%;
+            max-width: 600px;        
+            margin: 10px auto 0 auto; 
+            font-size: 1.2em;
+            padding: 10px 20px;
+            background-color: #091619;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            border-radius: 8px;
+            cursor: pointer;
+            white-space: nowrap;
+            overflow: hidden;
+            transition: width 0.4s ease, border-radius 0.4s ease;
+        }
+
+        .btn.active {
+            width: 60%;
+            max-width: 600px;
+            border-radius: 8px 8px 0 0; 
+            border-bottom: 1px solid transparent; 
+        }
+
+        .tracklist {
+            display: none;
+            width: 60%;
+            max-width: 600px;        
+            margin: 0 auto 20px auto; 
+            padding: 20px 0;
+            text-align: center;
+            border-left: 1px solid #ffffff;
+            border-right: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
+            border-top: none;          
+            border-radius: 0 0 8px 8px;
+            box-sizing: border-box;    
+        }
+        #left {
+            width: 100%; 
+            height: 100%;
+            object-fit: cover;
+            margin: 0;
+            padding: 0;
+            display: block;
+            -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+            mask-image: linear-gradient(to right, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+        }
+
+        #right {
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            margin: 0;
+            padding: 0;
+            display: block;
+            -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+            mask-image: linear-gradient(to left, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+        }
+        }
