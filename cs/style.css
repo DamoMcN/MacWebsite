@@ -4,6 +4,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Garamond', sans-serif;
+    padding-top: 60px;
 }
 a {
     color: inherit;
@@ -19,11 +20,33 @@ footer {
     color: #ffffff;
     font-size: 0.9em;
 }
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #091619;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; 
+}
+header img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 /* Opening Cover */
 #indexCover {
   position: relative;
   text-align: center;
-  padding-top: 30px;
   padding-bottom: 30px;
   width: 100%;
   color: white;
@@ -107,7 +130,7 @@ footer {
     }
 
     #Macadelic {
-        --gradient-colors: #505050, #fafafa, #b34846 ;
+        --gradient-colors: #505050,#b34846, #fafafa  ;
     }
 
     #WMWTSO {
@@ -119,7 +142,7 @@ footer {
     }
 
     #GOODAM {
-        --gradient-colors: #f8fafc, #94a3b8, #9e9e9e;
+        --gradient-colors: #94a3b8, #f8fafc,  #9e9e9e;
     }
 
     #TheDivineFeminine {
@@ -138,3 +161,125 @@ footer {
         --gradient-colors: #2f5da8,#daedf3, #e7a38b ;
     }
 
+.albumCover {
+  position: relative;
+  text-align: center;
+  padding-bottom: 30px;
+  width: 100%;
+  color: white;
+}
+    .albumCover img {
+        width: 60%;
+        height: auto;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+.btn {
+    display: block;
+    width: 140px;            
+    margin: 10px auto;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #091619;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: width 0.4s ease, border-radius 0.4s ease; 
+}
+
+.btn.active {
+    width: 80%;               
+    border-radius: 8px 8px 0 0; 
+    border-bottom: none;
+}
+
+.tracklist {
+    display: none;
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+    margin: 15px, 40px, 15px, 40px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 0 0 8px 8px;
+}
+.tracklist li {
+    list-style-type: none;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    margin: 0;
+}
+
+.InfoContainer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden; 
+}
+#BasicInfo {
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#MacadelicExtraInfo{
+    background-image: url('img/GoodMorningImgs/MacadelicBG.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; 
+}
+
+.col { 
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.Txtcol {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#left {
+    width: 100%; /* Spans full width of left column */
+    height: 100%; /* Spans full height of row */
+    object-fit: cover; /* Prevents image distortion */
+    margin: 0;
+    padding: 0;
+    display: block;
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to right, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+}
+
+#right {
+    width: 100%; /* Spans full width of right column */
+    height: 100%; /* Spans full height of row */
+    object-fit: cover; /* Prevents image distortion */
+    margin: 0;
+    padding: 0;
+    display: block;
+    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to left, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+}
