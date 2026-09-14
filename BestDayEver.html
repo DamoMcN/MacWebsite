@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cs/style.css">
     <title>MacSite</title>
 </head>
+
 <body>
     <header>
-        <a href="index.html">
-            <img src="img/HandburgerIcon.webp" alt="Home">
-        </a>
+
+        <div id="hamburgerBtn">
+            <img src="img/HandburgerIcon.webp" alt="Menu">
+        </div>
+
+        <nav id="navMenu" class="nav-menu">
+            <ul>
+                <li><a href="index.html"><img src="img/Home_icon_orange.png" alt="Home"></a></li>
+                <li><a href="KIDS.html"><img src="img/coverArtKIDS.jpg" alt="KIDS Album Cover"></a></li>
+                <li><a href="BlueSlidePark.html"><img src="img/coverArtBSL.jpg" alt="Blue Slide Park Album Cover"></a></li>
+                <li><a href="Macadelic.html"><img src="img/coverArtMacadelic.jpg" alt="Macadelic Album Cover"></a></li>
+                <li><a href="You.html"><img src="img/coverArtYou.jpg" alt="You Album Cover"></a></li>
+                <li><a href="WMWTSO.html"><img src="img/coverArtWMWTSO.webp" alt="WMWTSO Album Cover"></a></li>
+                <li><a href="Faces.html"><img src="img/coverArtFaces.jpg" alt="Faces Album Cover"></a></li>
+                <li><a href="GOODAM.html"><img src="img/coverArtGoodAM.jpg" alt="Good AM Album Cover"></a></li>
+                <li><a href="TheDevineFeminine.html"><img src="img/coverArtDivineFeminine.jpg" alt="The Divine Feminine Album Cover"></a></li>
+                <li><a href="Swimming.html"><img src="img/coverArtSwimming.jpg" alt="Swimming Album Cover"></a></li>
+                <li><a href="Circles.html"><img src="img/coverArtCircles.jpg" alt="Circles Album Cover"></a></li>
+                <li><a href="Balloonerism.html"><img src="img/coverArtBalloonerism.jpg" alt="Balloonerism Album Cover"></a></li>
+            </ul>
+        </nav>
+
     </header>
-    
+
     <div class="albumCover" id="KIDSCover">
         <img src="img/coverArtBestDayEver.jpg" alt="KIDS Album Cover">
     </div>
 
     <div>
         <button class="btn" id="tracklistBtn">Track List</button>
-        
+
         <div class="tracklist" id="ShowTracklist">
             <ul>
                 <li>1. Best Day Ever</li>
@@ -38,20 +59,19 @@
                 <li>14. Snooze</li>
                 <li>15. Keep Floatin'</li>
                 <li>16. BDE Bonus</li>
-
-
             </ul>
         </div>
 
     </div>
 
-     <div class="InfoContainer" id="BasicInfo">
+    <div class="InfoContainer" id="BasicInfo">
         <div class="row">
             <div class="col">
                 <h2>Album Info</h2>
                 <p>Released: March 11, 2011</p>
                 <p>Label: Rostrum Records</p>
-                <p>Primary Production: Handled mainly by ID Labs, with production contributions from Just Blaze, Chuck Inglish, Sap, and Khrysis.</p>
+                <p>Primary Production: Handled mainly by ID Labs, with production contributions from Just Blaze, Chuck
+                    Inglish, Sap, and Khrysis.</p>
             </div>
         </div>
     </div>
@@ -62,7 +82,9 @@
                 <img src="img/FratImgs/frat5.jpg" id="left" alt="Image of Mac">
             </div>
             <div class="Txtcol">
-                <p>The melody for Mac's breakout single "Donald Trump" was built on a sample of Sufjan Stevens' song "Vesuvius". When Rostrum Records sought to clear the sample after the song blew up, Stevens cleared it completely free of charge—only asking for a percentage of sync licensing royalties.</p>
+                <p>The melody for Mac's breakout single "Donald Trump" was built on a sample of Sufjan Stevens' song
+                    "Vesuvius". When Rostrum Records sought to clear the sample after the song blew up, Stevens cleared
+                    it completely free of charge—only asking for a percentage of sync licensing royalties.</p>
             </div>
         </div>
     </div>
@@ -70,7 +92,11 @@
     <div class="InfoContainer">
         <div class="row">
             <div class="Txtcol">
-                <p>Before Donald Trump entered politics, he praised Mac on YouTube when the "Donald Trump" music video hit 20 million views, calling Mac "the new Eminem". However, as the song hit Platinum status, Trump publicly flipped, demanding royalties on Twitter and threatening legal action. Mac responded by noting he was just using Trump as a symbol of wealth and could have easily named the song "Bill Gates".</p>
+                <p>Before Donald Trump entered politics, he praised Mac on YouTube when the "Donald Trump" music video
+                    hit 20 million views, calling Mac "the new Eminem". However, as the song hit Platinum status, Trump
+                    publicly flipped, demanding royalties on Twitter and threatening legal action. Mac responded by
+                    noting he was just using Trump as a symbol of wealth and could have easily named the song "Bill
+                    Gates".</p>
             </div>
             <div class="col">
                 <img src="img/FratImgs/frat7.jpg" id="right" alt="Image of Mac">
@@ -84,11 +110,12 @@
                 <img src="img/FratImgs/frat4.jpg" id="left" alt="Image of Mac">
             </div>
             <div class="Txtcol">
-                <p>Over 20,000 fans tuned in live on Ustream to watch Mac launch the tape in real-time, which temporarily crashed DatPiff's servers due to downloading traffic.</p>
+                <p>Over 20,000 fans tuned in live on Ustream to watch Mac launch the tape in real-time, which
+                    temporarily crashed DatPiff's servers due to downloading traffic.</p>
             </div>
         </div>
     </div>
-    
+
     <footer>
         <p>Created by: <a href="https://github.com/DamoMcN">Damon McNeela</a></p>
     </footer>
@@ -97,4 +124,5 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>

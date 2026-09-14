@@ -13,4 +13,8 @@ $(document).ready(function() {
         $(this).toggleClass('active');
         $('#ShowTracklist').slideToggle(400);
     });
+
+    $('#hamburgerBtn').on('click', function() {
+        $('#navMenu').toggleClass('active');
+    });
 });

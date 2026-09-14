@@ -50,8 +50,8 @@ ul {
   padding-bottom: 30px;
   width: 100%;
   color: white;
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);
 }
     #indexCover img {
         width: 80%;
@@ -117,6 +117,42 @@ ul {
         z-index: -1;
         margin: -3px;
 }
+
+.nav-menu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px 15px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.nav-menu {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: auto; 
+    height: auto;
+    background-color: #091619;
+    border-right: 1px solid #f68c27;
+    border-bottom: 1px solid #f68c27;
+    border-radius: 0 0 10px 10px;
+    transition: left 0.3s ease-in-out;
+    z-index: 999;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.nav-menu.active {
+    left: -6px;
+}
+
+.nav-menu ul li {
+    padding:0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
     #KIDS {
         --gradient-colors: #eab308, #3b82f6, #ef4444;
     }
@@ -131,6 +167,9 @@ ul {
 
     #Macadelic {
         --gradient-colors: #505050,#b34846, #fafafa  ;
+    }
+    #You{
+        --gradient-colors: #d3461b,#636057, #c32b02  ;
     }
 
     #WMWTSO {
