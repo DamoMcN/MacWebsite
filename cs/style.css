@@ -274,15 +274,14 @@ ul {
     overflow: hidden; 
 }
 #BasicInfo {
+    text-align: center;
     border: none;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
 }
 #MacadelicExtraInfo{
-    background-image: url('img/GoodMorningImgs/MacadelicBG.jpg');
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
+    border: 1px solid #f68c27;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .row {
